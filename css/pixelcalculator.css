@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+.mainscene {
+    width: 600px;
+    height: 570px;
+}
+
+.mainscene>* {
+    vertical-align: middle;
+}
+
+.mainWindow {
+    position: absolute;
+    left: 8px;
+    top: 50px;
+    width: 580px;
+    height: 310px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.readOut {
+    border: 1px solid #000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
+}
+
+#sldrTopRight {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+}
+
+#specimenImg {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#specimenMask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#rectRegion {
+    position: absolute;
+    border: 2px solid #f00;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.75), 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.readOutContainer {
+    position: absolute;
+    left: 8px;
+    top: 40px;
+    width: 230px;
+}
+
+.readOutContainer>* {
+    min-width: 88px;
+    margin: 6px 3px;
+}
+
+.readOutContainer>*:first-child {
+    display: block;
+    margin: 6px auto;
+    width: 80px;
+}
+
+.mainWindowContainer {
+    padding: 6px;
+    display: inline-block;
+}
+
+.specimenWindow {
+    position: absolute;
+    left: 246px;
+    top: 29px;
+}
+
+#specimenContent {
+    position: relative;
+    width: 210px;
+    height: 210px;
+}
+
+#ccdDimContainer {
+    position: absolute;
+    left: 470px;
+    top: 89px;
+}
+
+.bottomBacks {
+    margin-top: 0;
+}
+
+.sldr {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+}
+
+#btn {
+    display: inline-block;
+    position: relative;
+    width: 66px;
+    height: 30px;
+}
+
+#segment>div {
+    height: 30px;
+    padding: 0 15px;
+}
+
+#ccdLbl {
+    left: 10px;
+}
+
+#ccdMid {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 12px 0;
+    width: 56px;
+    border: 2px solid #f00;
+    box-shadow: inset 1px 1px 2px #000, 1px 1px 2px #000;
+}
+
+#ccdRight {
+    position: relative;
+    left: 45px;
+    top: -26px;
+}
+
+#ccdBot {
+    position: relative;
+    left: 1px;
+    top: -15px;
+}
+
+#arrow1 {
+    left: 11px;
+    top: 70px;
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+}
+
+#arrow2 {
+    left: 50px;
+    top: 49px;
+    -webkit-transform: rotate(54deg);
+    -moz-transform: rotate(54deg);
+    -ms-transform: rotate(54deg);
+    -o-transform: rotate(54deg);
+    transform: rotate(54deg);
+}
+
+#arrow3 {
+    left: 75px;
+    top: 46px;
+}
+
+#arrow4 {
+    left: 75px;
+    top: 80px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#arrow5 {
+    left: 6px;
+    top: 91px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#arrow6 {
+    left: 56px;
+    top: 91px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.arrow {
+    position: absolute;
+    width: 8px;
+    height: 16px;
+}
+
+.arrowTail {
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 2px;
+    height: 8px;
+    background: #fff;
+}
+
+.arrowHead {
+    position: absolute;
+    border-style: solid;
+    border-width: 0 4px 8px 4px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.grey {
+    background: #C0C0C0;
+}
+
+.yellow {
+    background: #FFFF00;
+}
+
+.red {
+    background: #FC6767;
+}

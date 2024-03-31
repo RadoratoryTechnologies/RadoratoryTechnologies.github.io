@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<objectives>	
+	<objective>
+		<tick>.04</tick>
+		<tick>.06</tick>
+		<tick>.08</tick>
+		<tick>.10</tick>
+	</objective>
+
+	<objective>
+		<tick>.08</tick>
+		<tick>.10</tick>
+		<tick>.12</tick>
+		<tick>.14</tick>
+		<tick>.16</tick>
+		<tick>.18</tick>
+		<tick>.20</tick>
+	</objective>
+
+	<objective>
+		<tick>.25</tick>
+		<tick>.30</tick>
+		<tick>.35</tick>
+		<tick>.40</tick>
+		<tick>.45</tick>
+	</objective>
+
+	<objective>
+		<tick>.40</tick>
+		<tick>.45</tick>
+		<tick>.50</tick>
+		<tick>.55</tick>
+		<tick>.60</tick>
+		<tick>.65</tick>
+		<tick>.70</tick>
+		<tick>.75</tick>
+		<tick>.80</tick>
+		<tick>.85</tick>
+	</objective>
+
+	<objective>
+		<tick>.65</tick>
+		<tick>.70</tick>
+		<tick>.75</tick>
+		<tick>.80</tick>
+		<tick>.85</tick>
+		<tick>.90</tick>
+		<tick>.95</tick>
+		<tick>1.0</tick>
+		<tick>1.20</tick>
+		<tick>1.30</tick>
+		<tick>1.40</tick>
+	</objective>
+
+	<objective>
+		<tick>.75</tick>
+		<tick>.80</tick>
+		<tick>.85</tick>
+		<tick>.90</tick>
+		<tick>.95</tick>
+		<tick>1.20</tick>
+		<tick>1.30</tick>
+		<tick>1.40</tick>
+	</objective>
+
+	<objective>
+		<tick>.90</tick>
+		<tick>.95</tick>
+		<tick>1.0</tick>
+		<tick>1.20</tick>
+		<tick>1.25</tick>
+		<tick>1.30</tick>
+		<tick>1.40</tick>
+	</objective>
+</objectives>

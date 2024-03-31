@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<specimens>	
+	<specimen>
+		<imgPath>aristolochiastem</imgPath>
+		<cbName>Calico Flower Stem</cbName>
+		<boxColor>#FF0000</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>earthworm</imgPath>
+		<cbName>Earthworm Cross Section</cbName>
+		<boxColor>#0000FF</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>cuboidalepithelium</imgPath>
+		<cbName>Epithelium Section</cbName>
+		<boxColor>#FFFF00</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>flaxfibers</imgPath>
+		<cbName>Flax Fiber Bundle</cbName>
+		<boxColor>#FFFF00</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>humancerebellum</imgPath>
+		<cbName>Human Cerebellum</cbName>
+		<boxColor>#FFFF00</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>phaesolusbeanpod</imgPath>
+		<cbName>Phaesolus Bean Pod</cbName>
+		<boxColor>#FF0000</boxColor>
+	</specimen>
+
+	<specimen>
+		<imgPath>ramiefibers</imgPath>
+		<cbName>Ramie Fibers</cbName>
+		<boxColor>#FFFFFF</boxColor>
+	</specimen>
+</specimens>

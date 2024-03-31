@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ccds>	
+	<ccd>
+		<width>4.8</width>
+		<height>3.6</height>
+		<diagonal>6.0</diagonal>
+	</ccd>
+
+	<ccd>
+		<width>6.4</width>
+		<height>4.8</height>
+		<diagonal>8.0</diagonal>
+	</ccd>
+
+	<ccd>
+		<width>8.8</width>
+		<height>6.6</height>
+		<diagonal>11.0</diagonal>
+	</ccd>
+
+	<ccd>
+		<width>12.8</width>
+		<height>9.6</height>
+		<diagonal>16.0</diagonal>
+	</ccd>
+</ccds>

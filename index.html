@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<HEAD>
+
+    <LINK REL="stylesheet" TYPE="text/css" HREF="./css/NikUtil.css" />
+    <LINK REL="stylesheet" TYPE="text/css" HREF="./css/pixelcalculator.css" />
+
+</HEAD>
+
+<BODY>
+
+    <DIV CLASS="tutorialTitle">Digital Camera Resolution for Optical Microscopy</DIV>
+
+    <DIV CLASS="mainscene">
+
+        <DIV CLASS="mainWindow">
+
+            <DIV CLASS="readOutContainer">
+                <DIV CLASS="mainWindowContainer">
+                    <DIV CLASS="controlText">Optical<BR>Resolution</DIV>
+                    <DIV CLASS="readOut grey labelText">value</DIV>
+                </DIV>
+
+                <DIV CLASS="mainWindowContainer">
+                    <DIV CLASS="controlText">Required<BR>Pixel Size</DIV>
+                    <DIV CLASS="readOut yellow labelText">value</DIV>
+                </DIV>
+
+                <DIV CLASS="mainWindowContainer">
+                    <DIV CLASS="controlText">Optimum<BR>CCD Array Size</DIV>
+                    <DIV CLASS="readOut yellow labelText">value</DIV>
+                </DIV>
+
+                <DIV CLASS="mainWindowContainer">
+                    <DIV CLASS="controlText">Monitor<BR>Magnification</DIV>
+                    <DIV CLASS="readOut red labelText">value</DIV>
+                </DIV>
+
+                <DIV CLASS="mainWindowContainer">
+                    <DIV CLASS="controlText">Total<BR>Magnification</DIV>
+                    <DIV CLASS="readOut red labelText">value</DIV>
+                </DIV>
+            </DIV>
+
+            <DIV CLASS="specimenWindow">
+                <DIV CLASS="specimenTitle">Specimen Image</DIV>
+                <DIV ID="specimenContent">
+                    <IMG ID="specimenImg"></IMG>
+                    <DIV ID="rectRegion"></DIV>
+                    <CANVAS ID="specimenMask"></CANVAS>
+                </DIV>
+            </DIV>
+
+            <DIV CLASS="inline" ID="ccdDimContainer">
+                <DIV CLASS="controlText" ID="ccdLbl">CCD<BR>Dimensions<BR>(mm)</DIV>
+                <DIV CLASS="ccdNumber controlText" ID="ccdMid">16.0</DIV>
+                <DIV CLASS="ccdNumber controlText" ID="ccdRight">9.6</DIV>
+                <DIV CLASS="ccdNumber controlText" ID="ccdBot">12.8</DIV>
+
+                <DIV CLASS="arrow" ID="arrow1">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+
+                <DIV CLASS="arrow" ID="arrow2">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+
+                <DIV CLASS="arrow" ID="arrow3">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+
+                <DIV CLASS="arrow" ID="arrow4">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+
+                <DIV CLASS="arrow" ID="arrow5">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+
+                <DIV CLASS="arrow" ID="arrow6">
+                    <DIV CLASS="arrowHead"></DIV>
+                    <DIV CLASS="arrowTail"></DIV>
+                </DIV>
+            </DIV>
+
+        </DIV>
+
+        <DIV CLASS="controlBackContainer">
+
+            <DIV CLASS="controlBack">
+                <DIV CLASS="controlText">Choose a Specimen</DIV>
+                <SELECT CLASS="select"></SELECT>
+            </DIV>
+
+            <DIV CLASS="controlBack">
+                <DIV CLASS="controlText">CCD Format:</DIV>
+                <DIV ID="segment">
+                    <DIV>1/3"</DIV>
+                    <DIV>1/2"</DIV>
+                    <DIV>2/3"</DIV>
+                    <DIV>1"</DIV>
+                </DIV>
+            </DIV>
+
+            <DIV CLASS="controlBack">
+                <DIV CLASS="controlText" ID="sldrTopRightReadOut">Computer Monitor<BR>Size: 27.0"</DIV>
+                <DIV ID="sldrTopRight"></DIV>
+            </DIV>
+
+            <DIV CLASS="controlBack bottomBacks">
+                <DIV CLASS="controlText sldrReadOut">Numerical<BR>Aperture: 1.40</DIV>
+                <DIV CLASS="sldr" ID="s1"></DIV>
+            </DIV>
+
+            <DIV CLASS="controlBack bottomBacks">
+                <DIV CLASS="controlText sldrReadOut">Objective<BR>Magnification: 40x</DIV>
+                <DIV CLASS="sldr" ID="s2"></DIV>
+            </DIV>
+
+            <DIV CLASS="controlBack bottomBacks">
+                <DIV CLASS="controlText sldrReadOut">Field Number<BR>(FN): 26</DIV>
+                <DIV CLASS="sldr" ID="s3"></DIV>
+            </DIV>
+
+            <DIV CLASS="controlBack bottomBacks">
+                <DIV CLASS="controlText sldrReadOut">Video Coupler<BR>Magnification: 1.0x</DIV>
+                <DIV CLASS="sldr" ID="s4"></DIV>
+            </DIV>
+
+        </DIV>
+
+    </DIV>
+
+    <SCRIPT TYPE="text/javascript" SRC="./js/jquery.min.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/TweenLite.min.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/CSSPlugin.min.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/EasePack.min.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/NikUtil.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="./js/pixelcalculator.js"></SCRIPT>
+
+</BODY>
