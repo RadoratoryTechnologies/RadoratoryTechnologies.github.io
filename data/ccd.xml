@@ -26,8 +26,18 @@
 	</ccd>
 
 	<ccd>
+		<width>12.8</width>
+		<height>12.8</height>
+		<diagonal>18.1</diagonal>
+	</ccd>
+	<ccd>
 		<width>23</width>
 		<height>18.4</height>
 		<diagonal>29.5</diagonal>
+	</ccd>
+	<ccd>
+		<width>29.9</width>
+		<height>22.4</height>
+		<diagonal>37.4</diagonal>
 	</ccd>
 </ccds>
