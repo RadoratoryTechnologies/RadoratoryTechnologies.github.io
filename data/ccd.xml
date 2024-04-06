@@ -24,4 +24,10 @@
 		<height>9.6</height>
 		<diagonal>16.0</diagonal>
 	</ccd>
+
+	<ccd>
+		<width>23</width>
+		<height>18.4</height>
+		<diagonal>29.5</diagonal>
+	</ccd>
 </ccds>
