@@ -35,7 +35,7 @@ function startTutorial() {
             return arr;
         })(),
         _sldrTopRight = new NikSlider("sldrTopRight"),
-        _segment = new NikRadioGroup("segment"),
+        _segment = document.getElementById("segment"),//new NikRadioGroup("segment"),
         _specimen = {},
         _objective = {},
         _ccd = {},
@@ -70,7 +70,7 @@ function startTutorial() {
         }
 
         _segment.onchange = function () {
-            var index = _segment.getSelectedIndex();
+            var index = this.selectedIndex;
             _ccdEls.ccdMid.innerHTML = _ccd[index].diagonal;
             _ccdEls.ccdRight.innerHTML = _ccd[index].height;
             _ccdEls.ccdBot.innerHTML = _ccd[index].width;
@@ -80,7 +80,7 @@ function startTutorial() {
     }
 
     function initControls() {
-        _segment.setSelectedIndex(2);
+        _segment.selectedIndex = 2;
         _sldr[1].tickCount = _magSelect.length;
         _sldr[2].tickCount = 5;
 
@@ -216,7 +216,7 @@ function startTutorial() {
         var magIndex = Math.round(_sldr[1].getPosition() * (_magSelect.length - 1)),
             tickLength = _objective[magIndex].tick.length,
             vcMagSldrVal = _sldr[3].getPosition(.2, 1),
-            ccdIndex = _segment.getSelectedIndex(),
+            ccdIndex = _segment.selectedIndex,
             objMagVal = parseInt(_magSelect[magIndex]),
             javaTopRightSldrHeight = 72,
             compMonSize = Math.floor(0.25 * _sldrTopRight.getPosition() * javaTopRightSldrHeight) + 9,
@@ -241,7 +241,7 @@ function startTutorial() {
 
     function updateSpecimenRect() {
         var specimenRect = new Rectangle();
-        var ccdIndex = _segment.getSelectedIndex();
+        var ccdIndex = _segment.selectedIndex;
         var ratio = calculateMaskDim(0) * _ccd[ccdIndex].diagonal / (20.8 * _sldr[3].getPosition(.2, 1));
         specimenRect.w = Math.floor(_ccd[ccdIndex].width * ratio / _ccd[ccdIndex].diagonal) + 6;
         specimenRect.h = Math.floor(_ccd[ccdIndex].height * ratio / _ccd[ccdIndex].diagonal) + 6;
