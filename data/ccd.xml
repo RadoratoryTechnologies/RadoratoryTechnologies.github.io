@@ -19,6 +19,11 @@
 		<diagonal>11.0</diagonal>
 	</ccd>
 
+    <ccd>
+		<width>9.21</width>
+		<height>5.47</height>
+		<diagonal>10.7</diagonal>
+	</ccd>
 	<ccd>
 		<width>12.8</width>
 		<height>9.6</height>
