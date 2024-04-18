@@ -51,6 +51,7 @@
 		<tick>1.20</tick>
 		<tick>1.30</tick>
 		<tick>1.40</tick>
+		<tick>1.45</tick>
 	</objective>
 
 	<objective>
@@ -62,6 +63,7 @@
 		<tick>1.20</tick>
 		<tick>1.30</tick>
 		<tick>1.40</tick>
+		<tick>1.45</tick>
 	</objective>
 
 	<objective>
@@ -72,5 +74,6 @@
 		<tick>1.25</tick>
 		<tick>1.30</tick>
 		<tick>1.40</tick>
+		<tick>1.45</tick>
 	</objective>
 </objectives>
