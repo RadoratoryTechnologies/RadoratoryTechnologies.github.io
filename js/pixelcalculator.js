@@ -186,8 +186,13 @@ function startTutorial() {
     function roundSignificant(f, n) {
         var pow10 = Math.pow(10, n),
             pow5 = 5 / Math.pow(10, n + 1);
-
         return Math.floor((f + pow5) * pow10) / pow10;
+    }
+
+    function getSignificant(f, n) {
+        var pow10 = Math.pow(10, n),
+            pow5 = 5 / Math.pow(10, n + 1);
+        return (f + pow5) * pow10 / pow10;
     }
 
     function updateFirstSliderText() {
@@ -215,15 +220,15 @@ function startTutorial() {
     function updateReadOuts() {
         var magIndex = Math.round(_sldr[1].getPosition() * (_magSelect.length - 1)),
             tickLength = _objective[magIndex].tick.length,
-            vcMagSldrVal = _sldr[3].getPosition(.2, 1),
+            vcMagSldrVal = _sldr[3].getPosition(.2, 2),
             ccdIndex = _segment.selectedIndex,
             objMagVal = parseInt(_magSelect[magIndex]),
             javaTopRightSldrHeight = 72,
             compMonSize = Math.floor(0.25 * _sldrTopRight.getPosition() * javaTopRightSldrHeight) + 9,
             numAperture = _objective[magIndex].tick[Math.round(_sldr[0].getPosition() * (tickLength - 1))],
             optResPre = 0.55 / (2 * numAperture),
-            optResVal = roundSignificant(optResPre, (optResPre < 1 ? 2 : 1)),
-            reqPxSizeVal = roundSignificant(optResVal * objMagVal * 0.5 * vcMagSldrVal, 1),
+            optResVal = getSignificant(optResPre, (optResPre < 1 ? 2 : 1)),
+            reqPxSizeVal = getSignificant(optResVal * objMagVal * 0.5 * vcMagSldrVal, 1),
             optCCDArrSizeFirst = 1000 * _ccd[ccdIndex].width / reqPxSizeVal,
             optCCDArrSizeSecond = 1000 * _ccd[ccdIndex].height / reqPxSizeVal,
             monitorMagVal = roundSignificant(compMonSize * 25.4 / _ccd[ccdIndex].diagonal, 1),
@@ -232,7 +237,7 @@ function startTutorial() {
         optCCDArrSizeFirst = Math.floor(optCCDArrSizeFirst / 10 + 0.5) * 10;
         optCCDArrSizeSecond = Math.floor(optCCDArrSizeSecond / 10 + 0.5) * 10;
 
-        _readOut[0].innerHTML = optResVal.toFixed(1) + " &microm";
+        _readOut[0].innerHTML = optResVal.toFixed(3) + " &microm";
         _readOut[1].innerHTML = reqPxSizeVal.toFixed(1) + " &microm";
         _readOut[2].innerHTML = optCCDArrSizeFirst + " x " + optCCDArrSizeSecond;
         _readOut[3].innerHTML = monitorMagVal.toFixed(1) + "x";
@@ -242,7 +247,7 @@ function startTutorial() {
     function updateSpecimenRect() {
         var specimenRect = new Rectangle();
         var ccdIndex = _segment.selectedIndex;
-        var ratio = calculateMaskDim(0) * _ccd[ccdIndex].diagonal / (20.8 * _sldr[3].getPosition(.2, 1));
+        var ratio = calculateMaskDim(0) * _ccd[ccdIndex].diagonal / (20.8 * _sldr[3].getPosition(.2, 2));
         specimenRect.w = Math.floor(_ccd[ccdIndex].width * ratio / _ccd[ccdIndex].diagonal) + 6;
         specimenRect.h = Math.floor(_ccd[ccdIndex].height * ratio / _ccd[ccdIndex].diagonal) + 6;
         specimenRect.x = (103 - specimenRect.w / 2);
@@ -300,7 +305,7 @@ function startTutorial() {
             updateSpecimenRect();
             updateReadOuts();
             _sldr[3].readOut.innerHTML = "Video Coupler<BR>Magnification: " +
-                _sldr[3].getPosition(.2, 1).toFixed(2) + "x";
+                _sldr[3].getPosition(.2, 2).toFixed(2) + "x";
             _sldr[3].hasChanged = false;
         }
 
